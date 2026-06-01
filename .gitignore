@@ -1,0 +1,55 @@
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+venv/
+.env/
+*.egg-info/
+.eggs/
+
+# CUDA files
+*.cu
+*.cuh
+*.ptx
+*.fatbin
+
+# Data files
+data/
+*.tiff
+*.h5
+*.npy
+*.npz
+
+# Checkpoints and logs
+checkpoints/
+logs/
+results/
+*.pth
+*.ckpt
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+*.so

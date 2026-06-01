@@ -1,0 +1,41 @@
+# NucEMFix Configuration File
+
+# Data paths
+data:
+  base_dir: ./data
+  img_dir: ${data.base_dir}/img
+  seg_dir: ${data.base_dir}/seg
+  correct_dir: ${data.base_dir}/correct
+  offsets_json: ${data.base_dir}/slice_offsets.json
+
+# Model paths
+model:
+  edge_model_path: ./checkpoints/graph_model.pth
+  sdf_model_path: ./checkpoints/sdf_model.pth
+
+# Pipeline parameters
+pipeline:
+  device: cuda:0
+  block_size: 128
+  stride: 64
+  target_n: 50000
+  dist_threshold: 7.0
+  base_feat: 32
+  crop_size: 128
+  iou_threshold: 0.75
+  num_workers: 2
+
+# Training parameters
+training:
+  batch_size: 8
+  epochs: 100
+  lr: 0.001
+  weight_decay: 0.0001
+  save_interval: 10
+  log_interval: 100
+
+# Output settings
+output:
+  result_dir: ./results
+  intermediate_dir: ./results/intermediate
+  log_dir: ./logs
