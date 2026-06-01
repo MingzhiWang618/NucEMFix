@@ -62,7 +62,7 @@ We present the method implementation and comparison baselines in this repository
 
 ## Framework
 
-![Framework](assets/framework.png)
+![Framework](assets/Framework.png)
 
 **Figure 1.** The proposed NuGraph pipeline. Erroneous masks are decomposed into atomic 3D primitives. A point-cloud backbone encodes primitive geometry; GATv2 graph attention performs global relational reasoning across primitives. A primitive–proposal contrastive loss guides grouping. A shape-refinement network predicts signed distance fields to restore smooth morphology.
 
@@ -291,40 +291,9 @@ Aggregate results across methods:
 python baselines/evaluate_all.py results/method1.json results/method2.json
 ```
 
-### Pre-trained Models
 
-Download pre-trained models and place them in `checkpoints/`:
 
-| Model | Description | Link |
-|-------|-------------|------|
-| `graph_model.pth` | Sparse U-Net + GATv2 graph model (FAFB) | [Download](#) |
-| `sdf_model.pth` | 3-D SDF completion model (FAFB) | [Download](#) |
 
----
-
-## Results
-
-### NucEMFix-F (FAFB Dataset)
-
-| Method | F1 |
-|--------|----|
-| Cellpose | — |
-| nnU-Net | 79.39% |
-| StarDist | — |
-| 3D U-Net (BC) | — |
-| **NUGRAPH (ours)** | **87.99%** |
-
-### NucEMFix-M (MICrONS Dataset)
-
-| Method | F1 |
-|--------|----|
-| Cellpose | — |
-| nnU-Net | — |
-| StarDist | — |
-| 3D U-Net (BC) | — |
-| **NUGRAPH (ours)** | **86.20%** |
-
----
 
 ## Citation
 
