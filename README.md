@@ -152,8 +152,6 @@ pip install pointnet2_ops
 | CUDA | 11.0+ |
 | GPU VRAM | 12 GB |
 
-Tested on Ubuntu 20.04 with NVIDIA A100 (80 GB).
-
 ---
 
 ## Usage
@@ -313,8 +311,6 @@ python baselines/evaluate_all.py results/method1.json results/method2.json
 ---
 
 ## Acknowledgement
-
-This work was supported by the National Science Foundation (NSF) CAREER Award (IIS-2239688), National Natural Science Foundation of China under Project 62406090, and Lingang Laboratory, Grant No. LGL-1987-03.
 
 This project uses [PointNet++](https://github.com/erikwijmans/Pointnet2_PyTorch), [spconv](https://github.com/traveller59/spconv), and [torch_geometric](https://github.com/pyg-team/pytorch_geometric).
 
